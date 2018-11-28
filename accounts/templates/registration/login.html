@@ -1,0 +1,56 @@
+{% load static %}
+<html>
+    <head>
+        <title>Ingreso Mis Perris</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'core/css/login.css' %}">
+    </head>
+   <img class="logo" src="{% static 'core/img/logo.png' %}" alt="mis perris logo">
+    
+</head>
+
+    
+    <body>
+    <header>
+    <img id="bg" src="{% static 'core/img/imagenlogin.jpg' %}" alt="Fondo" />
+
+        <ul class="navigation2">
+            <li>
+                <a href="{% url 'home' %}">Inicio</a>
+            </li>
+         </ul>   
+    </header>      
+
+       
+        
+    <form action="" class="login" method="post">
+        {% csrf_token %}
+            
+        
+    <table>
+        
+    <td><h2>Inicia Sesion</h2></td>
+    <br>
+    {{ form.as_table }}
+    <br>
+    
+    <input class="btn btn-blog" type="submit" value="Entrar">
+    <div class ="Container"></div>
+    <tr>
+      
+    
+
+    </table>
+    </form>
+  
+    </table>
+     
+            <h1></h1>
+            <h4><p>¿Esta Registrado? <a href="{% url 'register' %}">Registrar</a></p></h4>
+        
+    </body>
+                   
+            
+    
+</html>

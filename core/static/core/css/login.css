@@ -1,0 +1,145 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+
+
+.navigation2{
+    padding-right:300px;
+    text-align:center;
+    
+}
+.navigation2 li{
+    display:inline-block;
+    padding-left:10px;
+    margin-top: 25px;
+}
+.navigation2 li a {
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.formp{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin: left;
+}
+.login{
+    float: left;
+}
+
+.logo{
+    background-color: rgb(133,212,183)!important;
+    float: left;
+}
+
+#bg{
+    
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+    
+}
+.button{
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+        font-size: 13px;
+        text-align: center;
+        font-weight: 900;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+.login{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    
+}
+.titulo1{
+    float: right;
+    background-color: rgb(133,212,183)!important;
+    padding: 19px;
+    font-size: 15px;
+    width: auto;
+    margin: 0%;
+    border-spacing: 15px;
+
+}
+.titulo2{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: rgb(133,212,183)!important;
+    
+}
+table{
+margin: 170px;
+border: black 3px solid;
+border-spacing: 15px;
+border-collapse:separate;
+color:white;
+opacity: 50;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.button{
+    padding: 7px;
+}
+
+
+
+@media 
+(max-width:1024px){
+    
+    table{
+        border: black 3px solid;
+        margin: 0%;
+        border-spacing: 10px;
+        border-collapse:separate; 
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        color: slategrey;
+        background: rgba(19, 35, 47, 0.9);
+        padding: 40px;
+        max-width: 600px;
+  
+        box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+        float: left;
+        
+        }
+        
+        
+        
+        .button{
+            background-color: white;
+            border: 2px solid black;
+            color: black;
+            font-size: 13px;
+            text-align: center;
+            font-weight: 900;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        #bg {
+           display:none;
+        }
+
+        .formp{
+            display:none;
+        }
+        
+}

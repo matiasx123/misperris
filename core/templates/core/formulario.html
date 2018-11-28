@@ -1,0 +1,74 @@
+{% extends "core/base.html" %}
+
+{% block contenido %}
+
+<center>
+
+<h2>Formulario</h2>
+<br>
+<form action="" id="postulanteFormulario" method="POST">
+        {% csrf_token %}
+        <label for="">Nombre completo:</label>
+        <input type="text"  name="txtNombre" id="txtNombre">
+        <br>
+        
+        <label for="">Run:</label>
+        <input type="text"  name="txtRun" id="txtRun">
+        <br>
+        
+        <label for="">Fecha de Nacimiento:</label>
+        <input type="date"   name="txtFechaNacimiento" id="txtFechaNacimiento">
+        <br>
+            
+        <label for="">Región:</label>
+        <select  name="cboRegion" id="cboRegion">
+            <option value="">Seleccionar</option>
+
+            {% for m in regiones %}
+
+            <option value="{{ m.id }}">{{ m.nombre }} </option>
+            
+            {% endfor %}
+        </select>
+        <br>
+        
+        <label for="">Ciudad:</label>
+        <select  name="cboCiudad" id="cboCiudad">
+                <option value="">Seleccionar</option>
+
+                {% for c in ciudades %}
+
+                <option value="{{ c.id }}">{{ c.nombre }}</option>
+                
+                {% endfor %}
+        </select>
+        <br>
+        
+        <label for="">Tipo de Vivienda:</label>
+        <select  name="cboVivienda" id="cboVivienda">
+                <option value="">Seleccionar</option>
+
+                {% for n in viviendas  %}
+
+                <option value="{{ n.id }}">{{ n.descripcion }}</option>
+                
+                {% endfor %}
+        </select>
+        <br>
+       
+        <label for="">Teléfono de contacto:</label>
+        <input type="text"  name="txtTelefono" id="txtTelefono">
+        <br>
+        
+        <label for="">Correo electrónico:</label>
+        <input type="text"  name="txtCorreo" id="txtCorreo">
+        <br>
+        <br>
+        <input type="submit" name="btnGuardar" id="btnGuardar" value="Guardar">
+    
+    </form>    
+
+    <h3>{{ mensaje }}</h3>
+</center>
+{% endblock contenido %}
+

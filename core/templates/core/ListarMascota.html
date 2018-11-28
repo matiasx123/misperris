@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %}
+
+
+{% block contenido %}
+
+<h2 class="titulo">Listado de Mascotas</h2>
+<table class="tabla">
+
+    <tr>
+        <th class="tabla-label">Raza</th>
+        <th class="tabla-label">Nombre mascota</th>
+        <th class="tabla-label">Genero</th>
+        <th class="tabla-label">Fecha ingreso</th>
+        <th class="tabla-label">Fecha de Nacimiento</th>
+        <th class="tabla-label">Estado</th>
+        <th class="tabla-label">Imagen</th>
+        <th class="tabla-label">Opciones</th>
+
+    </tr>
+
+    {% for m in mascotas %}
+
+    <tr class="tabla-td">
+        <td class="tabla-content">{{ m.raza.nombre }}</td>
+        <td class="tabla-content">{{ m.nombre }}</td>
+        <td class="tabla-content">
+           
+         {{ m.genero.id }}
+           
+        </td>
+        <td class="tabla-content">{{ m.fechaIngreso }}</td>
+        <td class="tabla-content">{{ m.fechaNacimiento }}</td>
+        <td class="tabla-content">{{ m.estado.descripcion }}</td>
+        <td class="tabla-content">
+        {% if m.imagen %}
+        <img src ="{{ m.imagen.url }}" width = "200" height= "200">
+        {% endif %}
+        </td>
+
+
+        <td class="tabla-content">
+        <a href="{% url 'Eliminar_Mascota' m.id %}">Eliminar</a>
+        </td>
+    </tr>
+
+    {% endfor %}
+
+</table>
+
+<!--Primero preguntamos si es que existen mensaje que imprimir-->
+
+
+{% endblock contenido %}

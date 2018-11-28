@@ -1,0 +1,593 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.numero{
+    font-size:25px;
+    float: left;
+    width: 34%;
+    text-align: left;
+    white-space: nowrap;
+    background-color:rgb(133,212,183)!important;
+    
+}
+
+.eslogan{
+    font-size:20px;
+    float: left;
+    width: 33%;
+    text-align: center;
+    white-space: nowrap;
+    margin-left:0;
+}
+
+
+
+.btnEntrar{
+    width: auto;
+    height: auto;
+}
+.row{
+    background-color: white!important;
+}
+body{
+    background-color: rgb(133,212,183);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(133,212,183);
+}
+.contenido_informativo{
+    text-align: end;
+    padding-right: 20px;
+}
+
+.contenido_informativo hr{
+    width: 55px;
+    float: right;
+    height: 1px;
+    background-color: black;
+}
+
+.contenido_crowfunding{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+.contenido_crowfunding hr{
+    width: 55px;
+    float: left;
+    height: 1px;
+    background-color: black;
+}
+
+.galeria {   
+    background-color: rgb(133,212,183)!important;  
+}
+
+.galeria img{
+    
+    display: inline-block;
+    margin: 13px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    
+}
+.link_head{
+
+    display: flex;
+    justify-content: center;
+    float: right;
+    margin-top: 20px;
+    margin-right: 150px;
+}
+
+.link_head li{
+    display: inline-block;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+.link_head li a{
+    color: white;
+    text-decoration: none;
+    }
+.adopcion{
+    color:darkslategrey;
+    margin-top: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    background-color: rgb(133,212,183);
+}
+
+.formp{
+    margin-top: 100px;
+    float: left;
+    
+}
+
+/*
+.columna .izquierda{
+    padding-right: 10px;
+    text-align-last: left;
+}
+
+.columna .centro{
+    padding-right: 10px;
+    text-align-last: center;
+}
+
+.columna .derecha {
+    padding-right: 10px;
+    text-align-last: right;
+}
+*/
+
+
+
+.imgal:after{
+    content:"";
+    display: table;
+    clear: both;
+   
+}
+
+.imgal{
+    background-color: rgb(133,212,183)!important;
+}
+.colver2{
+    margin-top: 15px;
+    float: left;
+    width: 30%;
+    padding-left: 30px;
+    background-color: rgb(133,212,183)!important;
+}
+.images_left{
+    margin-left: 15px;
+    
+}
+.image1{
+    max-width: 80%;
+    height: auto;
+}
+.image2{
+    max-width: 80%;
+    height: auto;
+    margin-top:15px;
+}
+.image3{
+    max-width: 80%;
+    height: auto;
+    margin-top:15px;
+}
+.image4{
+    max-width: 55%;
+    height: auto;
+}
+.image5{
+    max-width: 55%;
+    height: auto;
+    margin-top:15px;
+}
+.image6{
+    max-width: 80%;
+    height: auto;
+    margin-top:15px;
+}
+.image7{
+    max-width: 80%;
+    height: auto;
+    margin-top:15px;
+}
+
+.images_center{
+    margin: 10px!important;
+}
+
+
+
+.logo{
+    width: 329px;
+    height: 60px;
+    margin-top:10px;
+    margin-left: 20px;
+    float: left;
+}
+.navigation{
+    padding-right:300px;
+    text-align:center;
+}
+.navigation li{
+    display:inline-block;
+    padding-left:10px;
+    margin-top: 25px;
+}
+.navigation li a {
+    color:white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.landing{
+    background-color:  rgb(133,212,183)!important;
+    height:650px;
+    color:white;
+}
+
+.imagen_landing{
+    margin:auto;
+    display:block;
+    width: 700px;
+    height: auto;
+    
+}
+.bx-wrapper{
+    background-color: rgb(109,204,170)!important;
+    margin: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.main{
+    margin: 100px;
+    white-space: nowrap;
+    
+}
+
+
+.mission{
+    font-size:20px;
+    float: left;
+    width: 33%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.main li{
+    display:inline-block;
+    margin-right:20px;
+}
+
+.social{
+    float:left;
+    text-align:right;
+    width: 33%;
+}
+
+.social li{
+    display:inline-block;
+    margin-right:20px;
+}
+
+.social li img{
+    height:50px;
+    width:50px;
+}
+
+.column{
+    margin-top: 15px;
+    float: left;
+    width: 50%;
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.content_left{
+    padding-right: 10px;
+    text-align-last: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content_left_title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.content_left_subtitle{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.content_left_text{
+    font-size: 17px;
+    padding-top: 5px;
+    line-height: 25px;
+}
+
+.content_left_line{
+    float: right;
+    width: 10%;
+    border:2px solid black;
+}
+
+.content_left_image{
+    max-width: 250px;
+    max-height: 140px;
+    width: 80%;
+    height: auto;
+}
+
+.content_right{
+    padding-left: 10px;
+    text-align-last: left;
+}
+
+.content_right_title{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.content_right_subtitle{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.content_right_text{
+    font-size: 17px;
+    padding-top: 5px;
+    line-height: 25px;
+}
+
+.content_right_image{
+    max-width: 250px;
+    max-height: 210px;
+    width: 80%;
+    height: auto;
+}
+
+.content_right_line{
+    width: 10%;
+    border:2px solid black;
+}
+
+.content_right_button{
+    background-color: white;
+    border: 2px solid black;
+    color: rgb(75, 46, 46);
+    font-size: 13px;
+    text-align: center;
+    font-weight: 900;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+    height: 60px;
+}
+
+.footer_text{
+    font-weight: 100;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+/* Listar Mascota */
+
+.titulo{
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.tabla{
+    background: cyan;
+    width: 100%;
+    max-width: 1100 px;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+}
+
+.tabla-label{
+    background: cyan;
+    text-align: center;
+    width: 15%;
+    height: 50px;
+    color: white;
+    border: 1px solid black;
+    padding-right: 41px;
+}
+
+.tabla-td{
+    background: white;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-radius: 3px; 
+}
+
+.tabla-content{
+    background-color: white;
+    width: 15%;
+    height: 50px;
+    padding-right: 41px;
+    text-align: inherit;
+}
+
+.guardar{
+    height: 35px;
+    color: black;
+    display: block;
+    font-size: 24px;
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0, .5) 
+}
+
+.imgal:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.imgal{
+    background-color: rgb(133,212,183)!important;
+}
+
+.colver2{
+    margin-top: 15px;
+    float: left;
+    width: 30%;
+    padding-left: 30px;
+    background-color: rgb(133,212,183)!important;
+}
+
+.images_left{
+    margin-left: 15px;    
+}
+
+.image1{
+    max-width: 80%;
+    height: auto;
+}
+
+.image2{
+    max-width: 80%;
+    height: auto;
+    margin-top:15px;
+}
+
+.image3{
+    max-width: 80%;
+    height: auto;
+    margin-top:15px;
+}
+
+.image4{
+    max-width: 55%;
+    height: auto;
+}
+
+.image5{
+    max-width: 55%;
+    height: auto;
+    margin-top:15px;
+}
+
+.image6{
+    max-width: 80%;
+    height: auto;
+    margin-top:15px;
+}
+
+.image7{
+    max-width: 80%;
+    height: auto;
+    margin-top:15px;
+}
+
+/*Media query para dispositivo móviles*/
+@media (max-width:1024px){
+    .landing{
+        width: 100%;
+        height: auto;
+    }
+
+    .landing_image{
+        width: 80%;
+        height: auto;
+    }
+
+    .number{
+        text-align: center;
+        float: none;
+        width: 100%;
+        
+    }
+
+    .main{
+        text-align: center;
+        float: none;
+        white-space: normal;
+        margin: 10px;
+    }
+
+    .mission{
+        white-space: nowrap;
+        width: 100%;
+        text-align: center;
+        margin: none;
+        padding: none;
+        float: none;
+        white-space: normal;
+    }
+
+    .social{
+        text-align: center;
+        float: none;
+        margin:0;
+        margin-top: 20px;
+        white-space: nowrap;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+
+    header{
+        height: 300px;
+    }
+
+    .navigation{
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin: auto;
+        padding-right: 0;
+    }
+
+    .navigation li{
+        width: 90%;
+        margin-left: 0;
+        margin: none;
+    }
+
+    .landing{
+        height: auto;
+    }
+
+    .row{
+        height: auto;
+    }
+
+    .column{
+        width: auto;
+        max-width: 90%;
+        padding-left: 10px;
+    }
+    head{
+        max-width: 99%;
+    }
+
+    body{
+        max-width: 99%;
+    }
+
+    .logo{
+        width: auto;
+        max-width: 90%;
+    }
+}

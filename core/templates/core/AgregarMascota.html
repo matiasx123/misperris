@@ -1,0 +1,73 @@
+{% extends "core/base.html" %}
+
+{% block contenido %}
+
+<center>
+<h2>Formulario Mascota</h2>
+<br>
+    <li>
+        {% if request.path == "/AgregarMascota/" %}
+        <a href="/ListarMascota/ "> Listar Mascota</a>
+        {% endif %}
+    </li>
+<br>
+<form action=""  id="AgregarMascota" method="POST" enctype ="multipart/form-data">
+        {% csrf_token %}
+        <label for="">Nombre mascota:</label>
+        <input type="text"  name="txtNombreMascota" id="txtNombreMascota">
+        <br>
+        
+        <label for="">Raza:</label>
+        <select  name="cboRaza" id="cboRaza">
+            <option value="">Seleccionar</option>
+        
+            {% for r in raza %}
+
+            <option value="{{ r.id }}">{{ r.nombre }} </option>
+            
+            {% endfor %}
+        </select>
+        <br>
+
+         
+        <label for="">Genero:</label>
+        <select  name="cboGenero" id="cboGenero">
+                <option value="">Seleccionar</option>
+
+                {% for g in genero %}
+
+                <option value="{{ g.id }}">{{ g.descripcion }}</option>
+                
+                {% endfor %}
+        </select>
+        <br>
+
+        <label for="">Fecha ingreso:</label>
+        <input type="date" name="txtFechaIngreso" id="txtFechaIngreso">
+        <br>
+
+        <label for="">Fecha de Nacimiento:</label>
+        <input type="date"   name="txtFechaNacimiento" id="txtFechaNacimiento">
+        <br>
+            
+
+        <label for="">Estado</label>
+        <select name="cboEstado" id="cboEstado">
+                <option value="">Seleccionar</option>
+                {% for e in estado %}
+                <option value="{{ e.id }}">{{ e.descripcion }}</option>
+                {% endfor %}
+        </select>
+        <br>
+        <label>Imagen</label>
+        <input type="file" name="txtimagen" id="txtimagen" > 
+
+        <br>
+        <input type="submit" name="btnGuardar" id="btnGuardar" value="Guardar">
+    
+    </form>    
+
+    <h3 class="guardar">{{mensaje}}</h3>
+
+</center>
+{% endblock contenido %}
